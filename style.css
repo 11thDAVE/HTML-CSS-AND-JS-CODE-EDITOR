@@ -1,0 +1,122 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+#header {
+    background-color: rgb(1, 1, 30);
+    font-size: 30px;
+    font-weight: bold;
+    padding: 1.5%;
+    margin-bottom: 20px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0082e6;
+    padding-left: 50px;
+}
+
+#header .headLeft {
+    display: flex;
+    align-items: center;
+}
+
+#header .headLeft span {
+    font-family: cursive;
+}
+
+#header .headLeft span img {
+    width: 70px;
+    margin-left: 5px;
+}
+
+#header .headRight {
+    margin-right: 50px;
+}
+
+#header .headRight select {
+    background-color: rgb(3, 3, 53);
+    color: white;
+    cursor: pointer;
+    width: 150px;
+}
+
+#header .headRight button {
+    background-color: rgb(3, 3, 53);
+    color: white;
+    font-size: 20px;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#header .headRight #switchMode {
+    width: 100px;
+    font-size: 10px;
+    border-radius: 0;
+    font-weight: bold;
+    height: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+}
+
+.container textarea {
+    resize: none;
+    display: block;
+    border-radius: 10px;
+    margin-left: 50px;
+}
+
+.container .left {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .left textarea {
+    margin-bottom: 10px;
+    background-color: rgb(13, 13, 13);
+    border: none;
+    color: white;
+    width: 85%;
+    height:32%;
+    padding: 20px;
+    font-size: 15px;
+}
+
+.container .left .label {
+    font-size: 30px;
+    font-family: cursive;
+}
+
+.container .right {
+    width: 50%;
+    position: fixed;
+    right: 0;
+    height: 100%;
+}
+
+#outputLabel {
+    display: block;
+}
+
+.container .right #output {
+    resize: none;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border: none;
+}
