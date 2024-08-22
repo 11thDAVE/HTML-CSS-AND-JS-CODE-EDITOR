@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODE WEB</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="CODING ICON.jpg">
+</head>
+<body class="body">
+    <div id="header">
+        <div class="headLeft">
+            <span class="logo">CWEB</span> <span><img src="CODING ICON.jpg"></span>
+        </div>
+        <div class="headRight">
+            <button id="increaseFontBtn">+</button>
+            <button id="decreaseFontBtn">-</button>
+            <select id="changeMode">
+                <option>DARK</option>
+                <option>LIGHT</option>
+            </select>
+            <button id="switchMode">SWITCH MODE</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="label">HTML <img src="html-5-icon.png" width="30"></div>
+            <textarea class="textarea1" spellcheck="false" id="html-code" onkeyup="run()"></textarea>
+            <div class="label">CSS <img src="CSS ICON.png" width="30"></div>
+            <textarea class="textarea2" spellcheck="false" id="css-code" onkeyup="run()"></textarea>
+            <div class="label">JS <img src="JAVASCRIPT ICON.webp" width="30"></div>
+            <textarea class="textarea3" spellcheck="false" id="js-code" onkeyup="run()"></textarea>
+        </div>
+        <div class="right">
+            <span id="outputLabel">▶Output</span>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
